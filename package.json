@@ -1,0 +1,15 @@
+{
+  "name": "contains-vowels",
+  "version": "1.0.0",
+  "description": "NPM Package to check if string contains vowels",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
