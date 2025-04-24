@@ -1,29 +1,32 @@
-const containsVowels = require('../index.js');
+const containsVowels = require('../index');
 
-test('Should return true if string contains vowel A', () => expect(containsVowels('AaA')).toBe(true));
-test('Should return true if string contains vowel E', () => expect(containsVowels('EeE')).toBe(true));
-test('Should return true if string contains vowel I', () => expect(containsVowels('IiI')).toBe(true));
-test('Should return true if string contains vowel O', () => expect(containsVowels('OoO')).toBe(true));
-test('Should return true if string contains vowel U', () => expect(containsVowels('UuU')).toBe(true));
-test('Should return true if string contains all vowels', () => expect(containsVowels('AaEeIiOoUu')).toBe(true));
+describe('containsVowels', () => {
+  it('Should return true for strings containing vowels', () => {
+    expect(containsVowels('hello')).toBe(true);
+    expect(containsVowels('programming')).toBe(true);
+    expect(containsVowels('AEIOU')).toBe(true);
+    expect(containsVowels('rhythm')).toBe(false);
+  });
 
-test('Should return false if param is empty', () => expect(containsVowels()).toBe(false));
-test('Should return false if param is empty string', () => {
+  it('Should return false for strings with no vowels', () => {
+    expect(containsVowels('crypt')).toBe(false);
+    expect(containsVowels('nth')).toBe(false);
+  });
+
+  it('Should return false for empty strings', () => {
     expect(containsVowels('')).toBe(false);
-    expect(containsVowels(' ')).toBe(false);
-});
+  });
 
-test('Should return false if param is not a string', () => {
-    expect(containsVowels({})).toBe(false);
-    expect(containsVowels([])).toBe(false);
-    expect(containsVowels([1, '2', 'A'])).toBe(false);
-    expect(containsVowels(Infinity)).toBe(false);
-    expect(containsVowels(12345)).toBe(false);
-    expect(containsVowels(-12345)).toBe(false);
-});
+  it('Should return false for non-string inputs', () => {
+    expect(containsVowels(123)).toBe(false);
+    expect(containsVowels(null)).toBe(false);
+    expect(containsVowels(undefined)).toBe(false);
+    expect(containsVowels([ 'a' ])).toBe(false);
+    expect(containsVowels({ a: 1 })).toBe(false);
+  });
 
-test('Should return false if string does not have any vowels', () => {
-    expect(containsVowels('BBBBCCCCCC;;;;!!!!!23213')).toBe(false);
-    expect(containsVowels('pygmy')).toBe(false);
-    expect(containsVowels('ghjklmnqrsxd')).toBe(false);
+  it('Should handle strings with special characters', () => {
+    expect(containsVowels('h@llo')).toBe(true);
+    expect(containsVowels('!@#$%^&*()_+')).toBe(false);
+  });
 });

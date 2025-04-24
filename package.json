@@ -1,6 +1,6 @@
 {
   "name": "contains-vowels",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "NPM Package to check if string contains vowels",
   "main": "index.js",
   "scripts": {
