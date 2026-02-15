@@ -6,7 +6,7 @@
 * ♻️ Works seamlessly with `CommonJS`, `ESM` and `TypeScript`
 * See examples below
 
-# Install via [NPM](https://www.npmjs.com/package/contains-emoji)
+# Install via [NPM](https://www.npmjs.com/package/contains-vowels)
 
 `$ npm i contains-vowels`
 
