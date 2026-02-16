@@ -1,6 +1,6 @@
 {
   "name": "contains-vowels",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "NPM Package to check if string contains vowels",
   "main": "index.js",
   "module": "index.js",
@@ -13,9 +13,19 @@
   "scripts": {
     "test": "jest --verbose"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "vowels",
+    "string",
+    "text",
+    "contains",
+    "check",
+    "utility",
+    "helper",
+    "javascript",
+    "npm"
+  ],
+  "author": "tuty",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tutyamxx/contains-vowels"

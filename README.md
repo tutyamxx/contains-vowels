@@ -1,6 +1,9 @@
 # contains-vowels
 
 <p align="center"><a href="https://nodei.co/npm/contains-vowels/"><img src="https://nodei.co/npm/contains-vowels.png"></a></a></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+</p>
 
 * Simple NPM Package to check if string contains vowels
 * ♻️ Works seamlessly with `CommonJS`, `ESM` and `TypeScript`
