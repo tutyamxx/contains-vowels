@@ -1,14 +1,14 @@
 {
   "name": "contains-vowels",
-  "version": "1.1.3",
-  "description": "NPM Package to check if string contains vowels",
+  "version": "1.1.4",
+  "description": "🗣️ NPM Package to check if string contains vowels",
   "main": "index.js",
   "module": "index.js",
   "types": "index.d.ts",
   "exports": {
-      "require": "./index.js",
-      "import": "./index.js",
-      "types": "./index.d.ts"
+    "require": "./index.js",
+    "import": "./index.js",
+    "types": "./index.d.ts"
   },
   "scripts": {
     "test": "jest --verbose"
@@ -31,6 +31,6 @@
     "url": "https://github.com/tutyamxx/contains-vowels"
   },
   "devDependencies": {
-    "jest": "^30.2.0"
+    "jest": "^30.3.0"
   }
 }
