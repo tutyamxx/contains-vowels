@@ -1,6 +1,6 @@
 /**
  *  contains-vowels - 🗣️ Checks if a string contains vowels
- *  @version: v1.1.4
+ *  @version: v1.1.5
  *  @link: https://github.com/tutyamxx/contains-vowels
  *  @license: MIT
  **/
